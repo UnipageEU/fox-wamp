@@ -1,3 +1,9 @@
+# Why this fork exists
+
+This fork [removes the sqlite and sqlite3 dependency]([url](https://github.com/UnipageEU/fox-wamp/commit/e5160127d3af9b8fb63912e69afa5e2ac4ea17ee)).
+Otherwise node-gyp fails when rebuilding within NodeJS mobile context.
+This obviously breaks all sqlite-related functionality, but for certain use-cases this is not needed.
+
 # FOX-WAMP is a The Web Application Message Server
 
 [![Build Status](https://travis-ci.org/kalmyk/fox-wamp.svg?branch=master)](https://travis-ci.org/kalmyk/fox-wamp)
